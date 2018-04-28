@@ -74,7 +74,7 @@ function Meural() {
      */
     Meural.prototype.down = function () {
         this.requestOptions.path = '/remote/control_command/set_key/down';
-
+        console.log("test");
         http.request(this.requestOptions, function (callback) {
             this.logDebug("down Service ", callback);
         }).end();

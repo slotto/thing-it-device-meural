@@ -1,38 +1,47 @@
-<div class="flexLayout flexAlignCenter flexJustifyCenter flexGrow1 marginTop0_5">
-    <div class="flexLayout flexDirectionColumn flexJustifyCenter flexAlignCenter marginLeft0_5">
+<div ng-if="true" class="flexLayout flexDirectionColumn flexJustifyCenter flexAlignCenter">
+    <div class="flexLayout flexAlignCenter flexJustifyCenter flexGrow1 marginTop0_5">
+        <div class="flexLayout flexDirectionColumn flexJustifyCenter flexAlignCenter marginLeft0_5">
 
-        <div class="flexLayout flexAlignCenter flexJustifyCenter flexGrow1 marginTop0_5">
-            <div class="circleButton marginLeft0_5" style="display: inline-block;"
-                 ng-click="panel.callActorService(component, 'up')">
-                <i class="fas fa-angle-up"></i>
+            <div class="flexLayout flexAlignCenter flexJustifyCenter flexGrow1 marginTop0_5">
+                <div class="circleButton marginLeft0_5" style="display: inline-block;"
+                     ng-click="panel.callDeviceService(component, 'up')">
+                    <i class="fa fa-angle-up"></i>
+                </div>
             </div>
+
+            <div class="flexLayout flexAlignCenter flexJustifyCenter flexGrow1 marginTop0_5">
+
+                <div class="circleButton marginLeft0_5" style="display: inline-block;"
+                     ng-click="panel.callDeviceService(component, 'left')">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="flexGrow1 flexAlignTop marginLeft0_5">
+                    <span class="smallFont lightPrimaryColor">&nbsp;</span>
+                </div>
+
+                <div class="flexGrow1 flexAlignTop marginLeft0_5" style="display: inline-block;">
+                    <i class="fa fa-image" style="font-size:40px;"></i>
+                </div>
+
+                <div class="flexGrow1 flexAlignTop marginLeft0_5">
+                    <span class="smallFont lightPrimaryColor">&nbsp;</span>
+                </div>
+
+                <div class="circleButton marginLeft0_5" style="display: inline-block;"
+                     ng-click="panel.callDeviceService(component, 'right')">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+
+            </div>
+
+            <div class="flexLayout flexAlignCenter flexJustifyCenter flexGrow1 marginTop0_5">
+                <div class="circleButton marginLeft0_5" style="display: inline-block;"
+                     ng-click="panel.callDeviceService(component, 'down')">
+                    <i class="fa fa-angle-down"></i>
+                </div>
+            </div>
+
         </div>
-
-        <div class="flexLayout flexAlignCenter flexJustifyCenter flexGrow1 marginTop0_5">
-
-            <div class="circleButton marginLeft0_5" style="display: inline-block;"
-                 ng-click="panel.callActorService(component, 'left')">
-                <i class="fas fa-angle-left"></i>
-            </div>
-
-            <div class="circleButton marginLeft0_5" style="display: inline-block;">
-                <i class="far fa-image" style="font-size:40px;"></i>
-            </div>
-
-            <div class="circleButton marginLeft0_5" style="display: inline-block;"
-                 ng-click="panel.callActorService(component, 'right')">
-                <i class="fas fa-angle-right"></i>
-            </div>
-
-        </div>
-
-        <div class="flexLayout flexAlignCenter flexJustifyCenter flexGrow1 marginTop0_5">
-            <div class="circleButton marginLeft0_5" style="display: inline-block;"
-                 ng-click="panel.callActorService(component, 'down')">
-                <i class="fas fa-angle-down"></i>
-            </div>
-        </div>
-
     </div>
 </div>
 
