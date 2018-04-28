@@ -47,6 +47,7 @@ function Meural() {
      */
     Meural.prototype.start = function () {
         var deferred = q.defer();
+        this.logLevel = "debug";
 
         this.requestOptions = {
             host: this.configuration.ipaddress,
