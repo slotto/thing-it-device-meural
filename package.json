@@ -1,8 +1,11 @@
 {
-  "name": "thing-it-device-meural",
+  "name": "@thing-it/device-meural",
   "version": "0.0.2",
   "description": "[thing-it-node] Device Plugin for meural picture frames.",
   "authors": "Julian Seibert",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish"
+  },
   "keywords": [
     "IoT",
     "thing-it",
